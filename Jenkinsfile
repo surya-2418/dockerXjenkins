@@ -12,7 +12,7 @@ pipeline{
             {
                 steps{
                     
-                    sh ' sudo docker build -t app . -f ./Dockerfile'
+                    sh ' sudo docker build -t app /var/lib/jenkins/workspace/demo/dockerXjenkins '
                 }
             }
              stage ( "Run" )
