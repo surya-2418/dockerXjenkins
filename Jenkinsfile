@@ -18,7 +18,7 @@ pipeline{
              stage ( "Run" )
             {
                 steps{
-                    sh ' sudo docker run -it --name appPy  app '
+                    sh ' sudo docker run --name appPy  app '
                 }
             }
 
