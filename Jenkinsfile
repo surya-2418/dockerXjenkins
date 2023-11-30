@@ -7,13 +7,13 @@ pipeline{
                     sh ' sudo git clone https://github.com/surya-2418/dockerXjenkins.git '
                 }
             }
-            stages ( "Build" )
+            stage ( "Build" )
             {
                 steps{
                     sh ' sudo docker build -t app  '
                 }
             }
-             stages ( "Run" )
+             stage ( "Run" )
             {
                 steps{
                     sh ' sudo docker run -it --name appPy  app '
