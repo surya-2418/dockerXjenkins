@@ -11,8 +11,8 @@ pipeline{
             stage ( "Build" )
             {
                 steps{
-                    sh ' sudo mv /var/lib/jenkins/workspace/demo/dockerXjenkins* /home/ec2-user/docker '
-                    sh ' sudo docker build -t app . '
+                    
+                    sh ' sudo docker build -f -t app . '
                 }
             }
              stage ( "Run" )
