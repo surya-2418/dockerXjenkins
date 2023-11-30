@@ -11,7 +11,7 @@ pipeline{
             stage ( "Build" )
             {
                 steps{
-                    sh ' sudo docker build -t app . '
+                    sh ' sudo docker build -t app ./ '
                 }
             }
              stage ( "Run" )
