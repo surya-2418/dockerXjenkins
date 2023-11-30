@@ -11,13 +11,13 @@ pipeline{
             stage ( "Build" )
             {
                 steps{
-                    sh ' docker build -t app . '
+                    sh ' sudo docker build -t app . '
                 }
             }
              stage ( "Run" )
             {
                 steps{
-                    sh ' docker run -it --name appPy  app '
+                    sh ' sudo docker run -it --name appPy  app '
                 }
             }
 
