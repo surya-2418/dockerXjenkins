@@ -4,7 +4,7 @@ pipeline{
             stage ( "clone" )
             {
                 steps{
-                    sh ' sudo git clone https://github.com/surya-2418/dockerXjenkins.git '
+                    sh ' git clone https://github.com/surya-2418/dockerXjenkins.git '
                 }
             }
             stage ( "Build" )
