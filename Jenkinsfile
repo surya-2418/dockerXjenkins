@@ -4,7 +4,7 @@ pipeline{
             stage ( "clone" )
             {
                 steps{
-                    sh 'rm -rf '
+                    sh 'rm -rf * '
                     sh ' git clone https://github.com/surya-2418/dockerXjenkins.git '
                 }
             }
